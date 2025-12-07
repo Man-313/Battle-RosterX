@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Battle RosterX</title>
+  <meta name="description" content="Demo website like GameRival. Replace images and links with your own." />
+  <style>
+    /* Simple, clean responsive styles. Replace colors / fonts as you like */
+    :root{
+      --dark:#2b2b2b;
+      --accent:#ffd166;
+      --primary:#2d0f3a; /* deep purple like your screenshot */
+      --muted:#f3f3f3;
+      --card:#0f1721;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; color:#222;background:white}
+    a{color:inherit;text-decoration:none}
+
+    /* NAV */
+    .nav{background:var(--dark);color:white;padding:14px 18px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand img{width:44px;height:44px;border-radius:6px}
+    .brand h1{font-size:18px;margin:0}
+    .menu{display:flex;gap:18px;align-items:center}
+    .menu a{color:#ddd;font-size:14px}
+    .hamb{display:none;border:0;background:transparent;color:white;font-size:20px}
+
+    /* HERO */
+    .hero{background:var(--primary);color:white;padding:64px 18px;display:flex;gap:32px;align-items:center}
+    .hero .left{max-width:640px}
+    .hero h2{font-size:42px;margin:0 0 12px}
+    .hero p{margin:0 0 18px;opacity:0.95}
+    .btn{display:inline-block;padding:12px 18px;border-radius:8px;border:2px solid rgba(255,255,255,0.18);background:transparent;color:white}
+    .hero .right img{max-width:420px;width:100%;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,0.4)}
+
+    /* SCREENSHOTS */
+    .section{padding:60px 18px;background:var(--muted);text-align:center}
+    .section h3{font-size:36px;margin:0 0 8px}
+    .section p{margin:0 0 28px;color:#555}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:22px;max-width:1100px;margin:0 auto}
+    .screenshot{background:white;padding:14px;border-radius:10px;box-shadow:0 6px 20px rgba(0,0,0,0.08)}
+    .screenshot img{width:100%;height:420px;object-fit:cover;border-radius:8px}
+
+    /* FEATURES */
+    .features{display:flex;flex-wrap:wrap;gap:18px;max-width:1100px;margin:36px auto}
+    .card{background:white;padding:18px;border-radius:10px;flex:1 1 260px;box-shadow:0 8px 26px rgba(0,0,0,0.06)}
+
+    footer{background:#111;padding:22px;color:#bbb;text-align:center}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{flex-direction:column;text-align:center}
+      .hero .right img{max-width:280px}
+    }
+    @media (max-width:680px){
+      .menu{display:none}
+      .hamb{display:block}
+    }
+  </style>
+</head>
+<body>
+  <!-- Top navigation -->
+  <nav class="nav">
+    <div class="brand">
+      <img src="C:\Users\Man\OneDrive\Desktop\tournament1\Battle RosterX.png" alt="Battle RosterX">
+      <div>
+        <h1>Battle RosterX</h1>
+        <div style="font-size:12px;color:#bbb">Play • Compete • Earn</div>
+      </div>
+    </div>
+
+    <div class="menu" id="menu">
+      <a href="#">Home</a>
+      <a href="#how">How To Install</a>
+      <a href="#screens">Screenshots</a>
+    </div>
+
+    <button class="hamb" id="hamb">☰</button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="left">
+      <h2>UNLEASH YOUR SKILLS HERE — Battle RosterX</h2>
+      <p>Play tournaments, win rewards and withdraw safely. </p>
+      <a class="btn" id="downloadBtn" href="https://ga-fs.primexop.com/12135/androidBuilds/battle-rosterxV1.apk">DOWNLOAD NOW!</a>
+    </div>
+    <div class="right">
+      <img src="C:\Users\Man\OneDrive\Desktop\tournament1\Battle RosterX.png" alt="Battle RosterX">
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section class="section" id="screens">
+    <h3>APP SCREENSHOT</h3>
+    <p>Check the screenshots below to get an idea of the app flow and the features.</p>
+
+    <div class="grid">
+      <div class="screenshot"><img src="C:\Users\Man\OneDrive\Pictures\Screenshots\Screenshot 2025-12-07 002352.png" alt="screen1"></div>
+      <div class="screenshot"><img src="C:\Users\Man\OneDrive\Pictures\Screenshots\Screenshot 2025-12-07 003007.png" alt="screen2"></div>
+      <div class="screenshot"><img src="C:\Users\Man\OneDrive\Pictures\Screenshots\Screenshot 2025-12-07 002936.png" alt="screen3"></div>
+      <div class="screenshot"><img src="C:\Users\Man\OneDrive\Pictures\Screenshots\Screenshot 2025-12-07 002906.png" alt="screen4"></div>
+    </div>
+
+    <div class="features">
+      <div class="card">
+        <h4>Refer & Earn</h4>
+        <p>Invite friends and earn coins when they join and play.</p>
+      </div>
+      <div class="card">
+        <h4>Multiple Games</h4>
+        <p>Tournaments, Solo matches and Leaderboards.</p>
+      </div>
+      <div class="card">
+        <h4>Fast Withdrawals</h4>
+        <p>Withdraw to UPI/Reeden code/ fam UPI.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download / CTA -->
+  <section style="padding:40px 18px; text-align:center;">
+    <div style="max-width:900px;margin:0 auto;background:linear-gradient(180deg,rgba(0,0,0,0.02),transparent);padding:28px;border-radius:12px;">
+      <h3 style="margin:0 0 8px">Ready to play?</h3>
+      <p style="margin:0 0 18px;color:#555">Click the button to download the APK. Replace the href with your real APK link.</p>
+      <a class="btn" href="https://ga-fs.primexop.com/12135/androidBuilds/battle-rosterxV1.apk" style="border-color:var(--primary);background:var(--primary);">Download APK</a>
+    </div>
+  </section>
+
+  <footer id="contact">
+    © <span id="year"></span> Battle RosterX
+  </footer>
+
+  <script>
+    // small JS: mobile menu toggle + update year + download button fallback
+    document.getElementById('year').innerText = new Date().getFullYear();
+    const hamb = document.getElementById('hamb');
+    hamb.addEventListener('click', ()=>{
+      const menu = document.getElementById('menu');
+      if(menu.style.display === 'flex') menu.style.display = 'none';
+      else menu.style.display = 'flex';
+    });
+
+    // If you want the download button to trigger a file download in same-hosting,
+    // put the apk in the same folder and set href="gameRival.apk". For cross-host downloads,
+    // host on a storage provider and paste the link in the anchor's href.
+
+    // Small safety: if user clicks download but link is '#download', show alert
+    document.getElementById('downloadBtn').addEventListener('click', function(e){
+      if(this.getAttribute('href') === '#download'){
+        e.preventDefault();
+        alert('Please replace the download link in the HTML with your APK file URL before using this button.');
+      }
+    });
+  </script>
+
+</body>
+</html>
+
